@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title> Documento </title>
+
+</head>
+
+<body>
+
+    <form action="#">
+        <h1> Times Paulistas </h1>
+
+
+        <!-- tag-->
+        <FIeldset>
+            <legend>Meu pai careca</legend>
+
+        <label for="time">Selecione seu time:</label>
+        <select id="Times" name="Times">
+
+            <option value="Desabilitado" selected disabled>Opções</option>
+
+            <option value="corinthians">Corinthians</option>
+            <option value="santos">Santos</option>
+            <option value="chapecoense">Chapecoense</option>
+            <option value="gremio">Gremio</option>
+
+        </select>
+
+        <br><br>
+        <!--  Usando tag Datalist -->
+
+        <label for="cCid">Sua cidade:</label>
+        <input type="text" name="cCid" id="cCid" list="cidades" autocomplete="on">
+        
+        <datalist id="cidades">
+            <option value="São Paulo"></option>
+            <option value="Juquitiba"></option>
+            <option value="Valinhos"></option>
+            <option value="Pinhalzinho"></option>
+            <option value="Angra dos Reis"></option>
+
+        </datalist>
+<br><br>
+
+<label for="textarea">Sua sugestão aqui:</label>
+
+<br><br>
+
+<textarea name="" id="textarea" cols="50" rows="5" placeholder="Digite aqui."  maxlength="50"></textarea>
+
+
+</FIeldset>
+
+    </form>
+
+</body>
+
+</html>

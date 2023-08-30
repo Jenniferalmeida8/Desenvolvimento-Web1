@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title> Atividade Form </title>
+
+
+</head>
+
+<body>
+
+    <h2>Formulario</h2>
+
+    <form action="mailto:Jennyfer.almeida_06@outlook.com" method="post">
+
+        <fieldset>
+            <legend>Informações do Aluno</legend>
+
+            <label for="cNOME">Nome:</label>
+            <input type="text" id="cNome">
+
+            <br><br>
+
+            <label for="sSobrenome">Sobrenome:</label>
+            <input type="text" id="cSobrenome">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="exemplo@gmail.com">
+
+
+
+            <br><br>
+
+            <label for="">Senha:</label>
+            <input type="password" id="cSenha" required="required">
+
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+
+            <legend>Curso</legend>
+            <h3>Qual curso você esta matriculado???</h3>
+
+            <input type="radio" name="curso" id="op1">
+            <label for="op1">Gestão ERP</label>
+
+            <br><br>
+
+            <input type="radio" name="curso" id="op2">
+            <label for="op1">Dev.web</label>
+
+            <br><br>
+
+            <input type="radio" name="curso" id="op3">
+            <label for="op1">Suporte de TI</label>
+
+            <br><br>
+
+            <input type="radio" name="curso" id="op4">
+            <label for="op1">Microsoft Oficce</label>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+
+            <legend>Transportes</legend>
+
+            <h3>Qual meio de transporte você usa? </h3>
+            <input type="checkbox" id="transporte1" name="transporte1" value="Bike" />
+            <label for="transporte1"> Bicicleta</label><br />
+
+            <br><br>
+
+            <input type="checkbox" id="transporte2" name="transporte2" value="Car" />
+            <label for="transporte2"> Carro</label><br />
+
+            <br><br>
+
+            <input type="checkbox" id="transporte3" name="transporte3" value="Metro" />
+            <label for="transporte3"> Metrô</label><br />
+
+            <br><br>
+
+            <input type="checkbox" id="transporte4" name="transporte4" value="Bus" />
+            <label for="transporte4"> Ônibus</label>
+            <br /><br />
+        </fieldset>
+        <br><br>
+        <fieldset>
+
+            <legend>Auto Indentidade</legend>
+
+            <h4>Qual cor você se define?</h4>
+
+            <input type="radio" name="Branco" id="op">
+            <label for="op1">Branco</label>
+
+            <br><br>
+
+            <input type="radio" name="Preto" id="op">
+            <label for="op2">Preto</label>
+
+            <br><br>
+
+            <input type="radio" name="Amarelo" id="op">
+            <label for="op3">Amarelo</label>
+
+            <br><br>
+
+            <input type="radio" name="Pardo" id="op">
+            <label for="op4">Pardo</label>
+
+            <br><br>
+
+            <input type="radio" name="Indigena" id="op">
+            <label for="op5">Indigena</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+
+            <legend>Faculdade</legend>
+
+            <h3>Quais cursos você tem interesse? </h3>
+            <input type="checkbox" id="curso1" name="curso1" value="ADS" />
+            <label for="curso1"> ADS </label><br />
+
+            <br><br>
+
+            <input type="checkbox" id="curso2" name="curso2" value="Direito" />
+            <label for="curso2"> Direito</label><br />
+
+            <br><br>
+
+            <input type="checkbox" id="curso3" name="curso3" value="PowerBi" />
+            <label for="curso3">Power Bi </label><br />
+
+            <br><br>
+
+            <input type="checkbox" id="curto4" name="curto4" value="SuporteTI" />
+            <label for="curto4"> Suporte de Ti</label>
+
+            <br /><br />
+
+        </fieldset>
+
+
+        <FIeldset>
+            <h4> Times Paulistas </h4>
+
+
+            <!-- tag-->
+
+            <legend>Futebol</legend>
+
+            <label for="time">Selecione seu time:</label>
+            <select id="Times" name="Times">
+
+                <option value="Desabilitado" selected disabled>Opções</option>
+
+                <option value="corinthians">Corinthians</option>
+                <option value="santos">Santos</option>
+                <option value="chapecoense">Chapecoense</option>
+                <option value="gremio">Gremio</option>
+
+            </select>
+
+            <br><br>
+            <!--  Usando tag Datalist -->
+
+            <label for="cCid">Sua cidade:</label>
+            <input type="text" name="cCid" id="cCid" list="cidades" autocomplete="on">
+
+            <datalist id="cidades">
+                <option value="São Paulo"></option>
+                <option value="Juquitiba"></option>
+                <option value="Valinhos"></option>
+                <option value="Pinhalzinho"></option>
+                <option value="Angra dos Reis"></option>
+
+            </datalist>
+            <br><br>
+
+            <label for="textarea">Sua sugestão aqui:</label>
+
+            <br><br>
+
+            <textarea name="" id="textarea" cols="50" rows="5" placeholder="Digite aqui." maxlength="50"></textarea>
+
+
+        </FIeldset>
+
+        <input type="submit" value="Enviar" id="Enviar">
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
